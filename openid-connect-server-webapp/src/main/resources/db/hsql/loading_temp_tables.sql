@@ -1,19 +1,19 @@
 --
--- Temporary tables used during the bootstrapping process to safely load users and clients.
+--  tables used during the bootstrapping process to safely load users and clients.
 -- These are not needed if you're not using the users.sql/clients.sql files to bootstrap the database.
 --
 
-CREATE TEMPORARY TABLE IF NOT EXISTS authorities_TEMP (
+CREATE  TABLE IF NOT EXISTS authorities_temp (
       username varchar(50) not null,
       authority varchar(50) not null,
-      constraint ix_authority_TEMP unique (username,authority));
+      constraint ix_authority_temp unique (username,authority));
       
-CREATE TEMPORARY TABLE IF NOT EXISTS users_TEMP (
+CREATE  TABLE IF NOT EXISTS users_temp (
       username varchar(50) not null primary key,
       password varchar(50) not null,
       enabled boolean not null);
 
-CREATE TEMPORARY TABLE IF NOT EXISTS user_info_TEMP (
+CREATE  TABLE IF NOT EXISTS user_info_temp (
 	sub VARCHAR(256) not null primary key,
 	preferred_username VARCHAR(256),
 	name VARCHAR(256),
@@ -35,7 +35,7 @@ CREATE TEMPORARY TABLE IF NOT EXISTS user_info_TEMP (
 	birthdate VARCHAR(256)
 );
 
-CREATE TEMPORARY TABLE IF NOT EXISTS client_details_TEMP (
+CREATE  TABLE IF NOT EXISTS client_details_temp (
 	client_description VARCHAR(256),
 	dynamically_registered BOOLEAN,
 	id_token_validity_seconds BIGINT,
@@ -49,22 +49,22 @@ CREATE TEMPORARY TABLE IF NOT EXISTS client_details_TEMP (
 	client_name VARCHAR(256)
 );
 
-CREATE TEMPORARY TABLE IF NOT EXISTS client_scope_TEMP (
+CREATE  TABLE IF NOT EXISTS client_scope_temp (
 	owner_id VARCHAR(256),
 	scope VARCHAR(2048)
 );
 
-CREATE TEMPORARY TABLE IF NOT EXISTS client_redirect_uri_TEMP (
+CREATE  TABLE IF NOT EXISTS client_redirect_uri_temp (
 	owner_id VARCHAR(256),
 	redirect_uri VARCHAR(2048) 
 );
 
-CREATE TEMPORARY TABLE IF NOT EXISTS client_grant_type_TEMP (
+CREATE  TABLE IF NOT EXISTS client_grant_type_temp (
 	owner_id VARCHAR(256),
 	grant_type VARCHAR(2000)
 );
 
-CREATE TEMPORARY TABLE IF NOT EXISTS system_scope_TEMP (
+CREATE  TABLE IF NOT EXISTS system_scope_temp (
 	scope VARCHAR(256),
 	description VARCHAR(4096),
 	icon VARCHAR(256),
