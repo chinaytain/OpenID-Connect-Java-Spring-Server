@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+	<div style="text-align:center;">
+		<button onclick="logout()">退出</button>
+		<div  id="iframebox" style="display:none;">
+
+		</div>
+	</div>
+<script>
+	function logout(){
+		var iframebox=document.getElementById("iframebox");
+		var iframe1 =document.createElement("iframe");
+		iframe1.setAttribute("src", "http://www.baidu.com");
+		iframe1.width="100%";
+		iframebox.appendChild(iframe1);
+		var iframe2 =document.createElement("iframe");
+		iframe2.setAttribute("src", "http://www.baidu.com");
+		iframe2.width="100%";
+		iframebox.appendChild(iframe2);
+		var iframe3 =document.createElement("iframe");
+		iframe3.setAttribute("src", "http://www.baidu.com");
+		iframe3.width="100%";
+		iframebox.appendChild(iframe3);
+	}
+
+</script>
+</body>
+</html>
