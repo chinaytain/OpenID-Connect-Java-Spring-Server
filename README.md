@@ -28,4 +28,12 @@ The authors and key contributors of the project include:
 * [Mark Janssen](https://github.com/praseodym)
 
 
+环境搭建：
+  1、初始化数据
+  2、80端口启动
+  3、文根分别为：
+        openid-connect-server-webapp      
+        uma-server-webapp
+
+
 Copyright &copy;2017, [MIT Internet Trust Consortium](http://www.trust.mit.edu/). Licensed under the Apache 2.0 license, for details see `LICENSE.txt`. 
