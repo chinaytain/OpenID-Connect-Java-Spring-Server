@@ -32,7 +32,12 @@
 
 * [刘晓曦](https://github.com/liouxiao/)
 
-
+环境搭建：
+  1、初始化数据
+  2、80端口启动
+  3、文根分别为：
+        openid-connect-server-webapp      
+        uma-server-webapp
 
 
 版权所有 &copy;2017 [MIT因特网信任联盟](http://www.mit-trust.org/). 采用Apache 2.0许可证, 详见 `LICENSE.txt`. 
