@@ -60,7 +60,7 @@ public class ConfigurationPropertiesBean {
 	private Long rqpTokenLifeTime;
 
 	private boolean forceHttps = false; // by default we just log a warning for HTTPS deployment
-
+    //dww update 修改为简体中文
 	private Locale locale = Locale.SIMPLIFIED_CHINESE; // we default to the english translation
 
 	private List<String> languageNamespaces = Lists.newArrayList("messages");
