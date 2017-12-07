@@ -61,7 +61,7 @@ public class ConfigurationPropertiesBean {
 
 	private boolean forceHttps = false; // by default we just log a warning for HTTPS deployment
 
-	private Locale locale = Locale.ENGLISH; // we default to the english translation
+	private Locale locale = Locale.SIMPLIFIED_CHINESE; // we default to the english translation
 
 	private List<String> languageNamespaces = Lists.newArrayList("messages");
 

@@ -50,7 +50,7 @@ public class JsonMessageSource extends AbstractMessageSource {
 
 	private Resource baseDirectory;
 
-	private Locale fallbackLocale = new Locale("en"); // US English is the fallback language
+	private Locale fallbackLocale = new Locale("zh"); // US English is the fallback language
 
 	private Map<Locale, List<JsonObject>> languageMaps = new HashMap<>();
 
